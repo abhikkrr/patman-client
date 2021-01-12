@@ -18,7 +18,7 @@ const routes: Routes = [
   {path:'resetpass', component: ResetPasswordComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'profile', component: UserProfileComponent, canActivate: [AuthGuard]},
-
+  {path: 'patient', loadChildren: () => import('./patient/patient.module').then(m => m.PatientModule), canActivate: [AuthGuard]},
 ];
 
 @NgModule({

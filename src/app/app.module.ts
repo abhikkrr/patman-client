@@ -15,13 +15,17 @@ import { DashboardComponent } from './user-management/dashboard/dashboard.compon
 import { HomeComponent } from './user-management/home/home.component';
 import { ResetPasswordComponent } from './user-management/reset-password/reset-password.component';
 import { LogoutComponent } from './user-management/logout/logout.component';
-import { NavigationMenuComponent } from './user-management/navigation-menu/navigation-menu.component';
+// import { NavigationMenuComponent } from './user-management/navigation-menu/navigation-menu.component';
 import { UserProfileComponent } from './user-management/user-profile/user-profile.component';
 import { MenuBarComponent } from './user-management/menu-bar/menu-bar.component';
 import { BannerComponent } from './common/component/banner/banner.component';
 import { FooterComponent } from './common/component/footer/footer.component';
 import { SharedModule } from './common/module/shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PatientComponent } from './patient/patient.component';
+import { DoctorComponent } from './doctor/doctor.component';
+import { PathologyComponent } from './pathology/pathology.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +36,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ResetPasswordComponent,
     LogoutComponent,
-    NavigationMenuComponent,
+    // NavigationMenuComponent,
     UserProfileComponent,
     MenuBarComponent,
     BannerComponent,
     FooterComponent,
+    PatientComponent,
+    DoctorComponent,
+    PathologyComponent,
+    ReportsComponent,
   ],
   imports: [
     BrowserModule,
